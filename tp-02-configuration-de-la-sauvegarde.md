@@ -16,9 +16,17 @@ Install-WindowsFeature -Name Windows-Server-Backup -IncludeManagementTools
 ```powershell
 Repadmin /showbackup
 ```
+## Pour tester
+
+* Sur votre poste de travail, configurez à l'aide d'une fenêtre CMD (et non powershell) winrm à l'aide des commandes suivantes :
+ ```bash
+winrm quickconfig
+winrm set winrm/config/client @{TrustedHosts="*"}
+```
 
 * Lancez Powershell en tant que compte **svc_backupad**, puis exécutez la commande suivante, avec le compte **svc_backupad** avec une console powershell à privilège:
 ```powershell
+Enter-PSSession -ComputerName <votreip>  -Credential $(Get-Credential <domain>\svc_backupad)
 $WBpolicy = New-WBPolicy
 Add-WBSystemState -Policy $Wbpolicy
 $WBtarget = New-WBBackupTarget -VolumePath 'D:'
