@@ -66,19 +66,24 @@ Dans le répertoire suivant : **Ecoles/Groupes/applications/AD**, ajoutez les gr
 
 Vous allez désormais réaliser des autorisations par type d'objet dans votre **Active Directory**.
 
-* Réalisez un clic droit sur l'unité d'organisation "compteApplicatif"
+* Réalisez un clic droit sur l'unité d'organisation "compteApplicatif", puis sélectionnez **délégation de contrôle**
+
 ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/d6e736a5-f18f-4dbf-920f-231d632eb185)
 
 * Cliquez sur "Ajouter le groupe", puis recherchez le groupe **AD_ADMIN_APPLICATIVEACCOUNTS**
+
 ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/8ca0e66b-7e02-4e70-9de0-7ccb641650e5)
 
-* Cliquez sur "**Créer une tâche personnalisée à déléguer**" 
+* Cliquez sur "**Créer une tâche personnalisée à déléguer**"
+
 ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/e9a96d16-951f-41b2-a65b-db8215bd8117)
 
 * Sélectionnez "Objet utilisateurs", ainsi que "Créer les objets..." et "Supprimer les objets..."
+
 ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/704d8dbb-dc87-49f1-a7a8-5bd2864ab7b3)
 
 * Donnez le contrôle total
- ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/354a519d-c935-48a9-8e90-9e5d7d621e52)
+
+![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/354a519d-c935-48a9-8e90-9e5d7d621e52)
 
 **Réalisez la même opération pour les autres groupes, en sélectionnant les objets AD appropriés (groupe pour AD_ADMIN_GROUPES, ordinateur pour AD_ADMIN_COMPUTERS...).**
