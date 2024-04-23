@@ -2,8 +2,8 @@
 
 * Dans votre domaine Active Directory, générez un compte svc_backupad
 * Ajoutez le dans le compte utilisateur svc_backupad dans les groupes suivantes :
-  * **BUILTIN\Backup Operator** (dans **CN=Builtin,DC=promo287,DC=local**) 
-  * **Users\Protected Users** (dans **CN=Users,DC=promo287,DC=local**)
+  * **Backup Operator** (dans **CN=Builtin,DC=votread,DC=local**) 
+  * **Protected Users** (dans **CN=Users,DC=votread,DC=local**)
 * A l’aide de PowerShell, installez la fonctionnalité **Wbackup (Windows Backup)**
 
 ```powershell
