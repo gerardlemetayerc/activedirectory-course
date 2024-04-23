@@ -56,7 +56,7 @@ Inspirez-vous de l'image suivante afin de générez une arborescence semblable :
 
 ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/61d8b835-305e-4431-9cc4-573895b89f31)
 
-Dans le répertoire suivant : **AD/applications/Groupes**, ajoutez les groupes AD suivants :
+Dans le répertoire suivant : **Ecoles/Groupes/applications/AD**, ajoutez les groupes AD suivants :
 * **AD_ADMIN_APPLICATIVEACCOUNTS** : sera dédié à l'administration des comptes applicatifs
 * **AD_ADMIN_COMPUTERS** : sera dédié à l'administration des comptes "ordinateurs"
 * **AD_ADMIN_GROUPES** : sera dédié à l'administration des groupes
