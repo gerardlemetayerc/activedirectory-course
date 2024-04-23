@@ -1,4 +1,4 @@
-# TP02 - Configuration de la sauvegarde
+# TP 2 - Configuration de la sauvegarde
 
 * Dans votre domaine Active Directory, générez un compte svc_backupad
 * Ajoutez le dans le groupe **BUILTIN\Backup Operator** et **Protected Users**
