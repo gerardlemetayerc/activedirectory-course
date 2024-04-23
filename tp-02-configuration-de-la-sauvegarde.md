@@ -19,7 +19,7 @@ Repadmin /showbackup
 ```powershell
 $WBpolicy = New-WBPolicy
 Add-WBSystemState -Policy $Wbpolicy
-$WBtarget = New-WBBackupTarget -VolumePath "C:"
+$WBtarget = New-WBBackupTarget -VolumePath 'D:'
 Add-WBBackupTarget -Policy $wbpolicy -Target $Wbtarget
 Start-WBBackup -Policy $WBpolicy
 ```
