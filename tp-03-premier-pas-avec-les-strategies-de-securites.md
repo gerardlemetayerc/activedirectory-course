@@ -51,6 +51,7 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 **Les sources sont disponibles ici :**
 - [Administrative Templates (.admx) for Windows 10 October 2022 Update.msi](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/admx/Administrative%20Templates%20(.admx)%20for%20Windows%2010%20October%202022%20Update.msi)
 - [chrome_configuration_admx.zip](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/admx/chrome_configuration_admx.zip)
+- [ldaps.x64.msi](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/laps/LAPS.x64.msi)
 
 ### Déploiement des ADMX
 
@@ -74,11 +75,15 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 ### Déploiement de LAPS et de sa stratégie de sécurité
 
 - Installation de LAPS sur votre contrôleur de domaines
+
+> [!NOTE]  
 > Prérequis : générez un compte administrateur du domaine supplémentaire.
 Déployez l’application LAPS sur votre contrôleur de domaine, en sélectionnant toutes les options disponibles.
  
+Une fois LAPS installé, démarrez PowerShell et exécutez la ligne de commande suivante (à réaliser avec un compte administrateur du schéma).
 
-Une fois LAPS installé, démarrez PowerShell et exécutez la ligne de commande suivante (à réaliser avec un compte administrateur du schéma) :
+> [!WARNING]
+> Positionnez-vous dans le groupe Administrateur du schéma puis fermez / ouvrez de nouveau votre session. 
 
 ```powershell
 Update-AdmPwdADSchema
@@ -86,13 +91,14 @@ Update-AdmPwdADSchema
 ### Déploiement de la stratégie
 
 - Générez une stratégie **COMPUTERS_LAPS**, et liez-la à la racine du domaine.
-- Editez là et rendez-vous dans la partie LAPS.
+- Editez là et rendez-vous dans la partie LAPS (**Configuration de l'ordinateur > Stratégies > Modèle d'administration... / LAPS**)
  
 
 Configurez les paramètres suivants :
 -	Complexité du mot de passe
- 
--	Le refus de permettre un mot de passe plus vieux que la stratégie de mot de passe locale
--	L’activation du paramétrage
- 
 
+ ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/898bd1d4-6225-47f9-b2f5-cff8bc9bc9b7)
+
+-	Configurez la GPO de la manière suivante pour les autres paramétrages :
+
+ ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/5ce00c46-2151-48e8-b5a1-21ab7c0eeeb2)
