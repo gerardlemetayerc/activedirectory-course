@@ -1,0 +1,14 @@
+Nom d’ordinateur,Cible de stratégie,Sous-catégorie,GUID de sous-catégorie,Paramètre d’inclusion,Paramètre d’exclusion,Valeur de paramètre
+,Système,Auditer le service d’authentification Kerberos,{0cce9242-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer les opérations de ticket du service Kerberos,{0cce9240-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la gestion des comptes d’ordinateur,{0cce9236-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la gestion des groupes de sécurité,{0cce9237-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la gestion des comptes d’utilisateur,{0cce9235-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer l’activité DPAPI,{0cce922d-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la création du processus,{0cce922b-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la fermeture de session,{0cce9216-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer l’ouverture de session,{0cce9215-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer l’ouverture de session spéciale,{0cce921b-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer la modification de stratégie d’authentification,{0cce9230-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer l’utilisation de privilèges sensibles,{0cce9228-69ae-11d9-bed3-505054503030},Succès et échec,,3
+,Système,Auditer l’extension du système de sécurité,{0cce9211-69ae-11d9-bed3-505054503030},Succès et échec,,3
