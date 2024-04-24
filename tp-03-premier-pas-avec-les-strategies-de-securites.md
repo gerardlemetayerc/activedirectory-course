@@ -66,7 +66,7 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 #### Déploiement des modèles de stratégie Google Chrome
 
 - Dézippez le contenu de votre répertoire de **chrome_configuration_admx.zip**
-- Copiez le répertoire **Configuration\admx** dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions** 
+- Copiez le contenu du répertoire **Configuration\admx** dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions** 
 
 #### Vérification de la disponibilité des modèles de stratégies
 - Démarrez la console de gestion des stratégies de groupes. Générez une nouvelle stratégie de groupe nommée **COMPUTERS_GOOGLE_CLIENTS**
