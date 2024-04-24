@@ -72,6 +72,9 @@ netdom query fsmo
 > [!IMPORTANT]  
 > Vous devriez voir votre serveur en tant que maître sur l’ensemble des rôles.
 
-- Démarrez votre serveur secondaire (anciennement porteur des zones). Vérifiez qui porte les rôles FSMO : il devrait avoir automatiquement mis à jour sa base d’information et transféré les rôles à son partenaire.
-Conclusion : le transfert des rôles FSMO est une opération simple, en l’état qui est réservée aux administrateurs du domaines et du schéma (pour le rôle de maître de schéma). Il est possible de forcer le transfert d’un rôle, les systèmes (recommandé version minimale 2016) supportent plutôt bien le « seize » (action de forcer le transfert de rôle). Forcer un rôle ne doit être réalisé QUE si nécessaire.
+- Démarrez votre serveur secondaire (anciennement porteur des zones).
+- Vérifiez qui porte les rôles FSMO : il devrait avoir automatiquement mis à jour sa base d’information et transféré les rôles à son partenaire.
+
+> [!NOTE]
+> Conclusion : le transfert des rôles FSMO est une opération simple, en l’état qui est réservée aux administrateurs du domaines et du schéma (pour le rôle de maître de schéma). Il est possible de forcer le transfert d’un rôle, les systèmes (recommandé version minimale 2016) supportent plutôt bien le « seize » (action de forcer le transfert de rôle). Forcer un rôle ne doit être réalisé QUE si nécessaire.
 
