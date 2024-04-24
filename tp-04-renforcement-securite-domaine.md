@@ -27,7 +27,7 @@ Ouvrez-le et parcourez-les différents points de sécurité.
 ## Déploiement des stratégies d’audit
 
 - Générez et attachez une stratégie de sécurité COMPUTERS_DOMAINCONTROLERS_AUDIT au niveau du conteneur des contrôleurs de domaine.
--	Téléchargez le fichier de définition de stratégie d’audit (https://github.com/gerardlemetayerc/activedirectory-course/blob/main/sources/strategies/parametre-strategie-audit.csv).
+-	Téléchargez le fichier de définition de stratégie d’audit (https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/strategies/parametre-strategie-audit.csv).
 -	Rendez-vous dans la stratégie COMPUTERS_DOMAINCONTROLERS_AUDIT
 
  	![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/69f2cece-326d-41ca-8315-2d0c1f456c79)
