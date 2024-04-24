@@ -49,7 +49,7 @@ Ici, la configuration des historiques de mots de passe n’a pas été réalisé
 Vous allez déployer dans cette partie deux modèles de stratégies de groupe : Windows 10 et Google Chrome.
 
 **Les sources sont disponibles ici :**
-- https://www.microsoft.com/en-us/download/details.aspx?id=104677
+- [Administrative Templates (.admx) for Windows 10 October 2022 Update.msi](https://github.com/gerardlemetayerc/activedirectory-course/blob/d2bf46af7b63dafad53421fc6b977b68688af48c/sources/admx/Administrative%20Templates%20(.admx)%20for%20Windows%2010%20October%202022%20Update.msi)
 - [chrome_configuration_admx.zip]([/sources/admx/chrome_configuration_admx.zip](https://github.com/gerardlemetayerc/activedirectory-course/blob/c4cae65334ae9e3b48ac46564c0d851d157353d5/sources/admx/chrome_configuration_admx.zip))
 
 ### Déploiement des ADMX
