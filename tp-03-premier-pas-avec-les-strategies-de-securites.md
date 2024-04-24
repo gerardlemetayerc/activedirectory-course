@@ -103,3 +103,23 @@ Configurez les paramètres suivants :
 -	Configurez la GPO de la manière suivante pour les autres paramétrages :
 
  ![image](https://github.com/gerardlemetayerc/activedirectory-course/assets/33660847/5ce00c46-2151-48e8-b5a1-21ab7c0eeeb2)
+
+
+### Contrôle de la bonne application
+
+- Exécutez la commande suivante :
+```powershell
+gpupdate
+```
+
+- Attendez quelques minutes, puis exécutez la commande powershell suivante :
+```powershell
+Get-ADComputer -Filter * -Properties * | Select Name, *Adm*
+```
+
+La ligne de commande doit contenir un résultat avec un résultat similaire :
+```powershell
+Name            ms-Mcs-AdmPwd            ms-Mcs-AdmPwdExpirationTime
+----            -------------            ---------------------------
+WIN-BEF6ALGVKKB .nuC$NA/O3;3y!w03}J%y#7}          133610307124573539
+```
