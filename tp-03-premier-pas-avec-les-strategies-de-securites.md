@@ -51,7 +51,7 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 **Les sources sont disponibles ici :**
 - [Administrative Templates (.admx) for Windows 10 October 2022 Update.msi](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/admx/Administrative%20Templates%20(.admx)%20for%20Windows%2010%20October%202022%20Update.msi)
 - [chrome_configuration_admx.zip](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/admx/chrome_configuration_admx.zip)
-- [ldaps.x64.msi](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/laps/LAPS.x64.msi)
+- [laps.x64.msi](https://github.com/gerardlemetayerc/activedirectory-course/raw/main/sources/laps/LAPS.x64.msi)
 
 ### Déploiement des ADMX
 
@@ -69,12 +69,13 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 - Copiez le contenu du répertoire **Configuration\admx** dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions** 
 
 #### Vérification de la disponibilité des modèles de stratégies
-- Démarrez la console de gestion des stratégies de groupes. Générez une nouvelle stratégie de groupe nommée **COMPUTERS_GOOGLE_CLIENTS**
+- Démarrez la console de gestion des stratégies de groupes (recherchez si besoin la console gpmc.msc via le menu de recherche). Générez une nouvelle stratégie de groupe nommée **COMPUTERS_GOOGLE_CLIENTS**
 - Vérifiez la présence de **Google** dans le noeud de stratégie suivant : **Configuration de l'ordinateur > Stratégies > Modèle d'administration...**
  
 ### Déploiement de LAPS et de sa stratégie de sécurité
 
 - Installation de LAPS sur votre contrôleur de domaines
+- Copiez de nouveau le répertoire **C:\Windows\PolicyDefinitions** dans **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies** (confirmez le fait d'écraser les fichiers existants).
 
 > [!NOTE]  
 > Prérequis : générez un compte administrateur du domaine supplémentaire.
