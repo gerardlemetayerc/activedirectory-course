@@ -48,11 +48,13 @@ Ici, la configuration des historiques de mots de passe n’a pas été réalisé
 
 Vous allez déployer dans cette partie deux modèles de stratégies de groupe : Windows 10 et Google Chrome.
 
-Les sources sont disponibles ici :
+**Les sources sont disponibles ici :**
 - https://www.microsoft.com/en-us/download/details.aspx?id=104677
-- Copiez le répertoire **C:\Windows\PolicyDefinitions** dans **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies**.
+- [chrome_configuration_admx.zip]([/sources/admx/chrome_configuration_admx.zip](https://github.com/gerardlemetayerc/activedirectory-course/blob/c4cae65334ae9e3b48ac46564c0d851d157353d5/sources/admx/chrome_configuration_admx.zip))
 
 ### Déploiement des ADMX
+
+- Copiez le répertoire **C:\Windows\PolicyDefinitions** dans **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies**.
 
 #### Déploiement des modèles de stratégies Windows 10
 
@@ -62,7 +64,7 @@ Les sources sont disponibles ici :
 
 #### Déploiement des modèles de stratégie Google Chrome
 
-- Dézippez le contenu de votre répertoire de chrome_withADMX.zip. Dans ce répertoire, dézippez le répertoire **policy_templates.zip**.
+- Dézippez le contenu de votre répertoire de **chrome_configuration_admx.zip**. Dans ce répertoire, dézippez le répertoire **policy_templates.zip**.
 - Copiez le contenu de windows\admx dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions**
 
 #### Vérification de la disponibilité des modèles de stratégies
@@ -76,12 +78,14 @@ Déployez l’application LAPS sur votre contrôleur de domaine, en sélectionna
  
 
 Une fois LAPS installé, démarrez PowerShell et exécutez la ligne de commande suivante (à réaliser avec un compte administrateur du schéma) :
+
 ```powershell
 Update-AdmPwdADSchema
 ```
-Déploiement de la stratégie
-Générez une stratégie _GPO_COMPUTERS_LAPS, et liez-la à la racine du domaine.
-Editez là et rendez-vous dans la partie LAPS.
+### Déploiement de la stratégie
+
+- Générez une stratégie **COMPUTERS_LAPS**, et liez-la à la racine du domaine.
+- Editez là et rendez-vous dans la partie LAPS.
  
 
 Configurez les paramètres suivants :
