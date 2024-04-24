@@ -58,17 +58,18 @@ Vous allez déployer dans cette partie deux modèles de stratégies de groupe : 
 
 #### Déploiement des modèles de stratégies Windows 10
 
-- Exécutez le programme **Administrative Templates (.admx) for Windows 10 [...]** et installez-le.
-- Rendez-vous dans le répertoire de déploiement de l’application : **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 [...]**.
+- Exécutez le programme **Administrative Templates (.admx) for Windows 10 October 2022 Update.msi** et installez-le.
+- Rendez-vous dans le répertoire de déploiement de l’application : **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2022**.
 - Copiez le répertoire PolicyDefinitions dans **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies**.
 
 #### Déploiement des modèles de stratégie Google Chrome
 
-- Dézippez le contenu de votre répertoire de **chrome_configuration_admx.zip**. Dans ce répertoire, dézippez le répertoire **policy_templates.zip**.
-- Copiez le contenu de windows\admx dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions**
+- Dézippez le contenu de votre répertoire de **chrome_configuration_admx.zip**
+- Copiez le répertoire **Configuration\admx** dans le répertoire **C:\Windows\SYSVOL\sysvol\votreDomaine\Policies\PolicyDefinitions** 
 
 #### Vérification de la disponibilité des modèles de stratégies
-- Démarrez la console de gestion des stratégies de groupes. Générez une nouvelle stratégie de groupe nommée **COMPUTERS_WINDOWS10**.
+- Démarrez la console de gestion des stratégies de groupes. Générez une nouvelle stratégie de groupe nommée **COMPUTERS_GOOGLE_CLIENTS**
+- Vérifiez la présence de **Google** dans le noeud de stratégie suivant : **Configuration de l'ordinateur > Stratégies > Modèle d'administration...**
  
 ### Déploiement de LAPS et de sa stratégie de sécurité
 
