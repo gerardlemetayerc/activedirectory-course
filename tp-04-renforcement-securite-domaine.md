@@ -56,4 +56,25 @@ Générez et attachez une stratégie de sécurité COMPUTERS_DISABLESPOOLER au n
     -	**Nom du service** : Spooler
     -	**Action du service** : Arrêter le service
  
+## Désactivation du SMBv1
 
+- Vérifiez l'état de SMBv1 sur votre contrôleur de domaine
+
+```powershell
+Get-WindowsFeature -Name *SMB*
+```
+Le résultat suivant devrait apparaître
+
+```powershell
+Display Name                                            Name
+------------                                            ----
+[ ] SMB Bandwidth Limit                                 FS-SMBBW
+[X] Support de partage de fichiers SMB 1.0/CIFS         FS-SMB1
+```
+
+- Exécutez le code suivant :
+```powershell
+Remove-WindowsFeature -Name FS-SMB1 -Remove
+```
+
+Un redémarrage du serveur est néccessaire.
